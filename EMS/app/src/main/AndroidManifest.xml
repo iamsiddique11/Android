@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ems">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:permission=""
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DynamicColors.Light">
+        <activity
+            android:name=".controller.EmployeeProfile"
+            android:exported="false" />
+        <activity
+            android:name=".controller.SurveyPage"
+            android:exported="false"
+            android:label="SURVEY PAGE" />
+        <activity
+            android:name=".controller.ShowEmployees"
+            android:exported="false"
+            android:label="View Employee" />
+        <activity
+            android:name=".controller.EmployeeAddActivity"
+            android:exported="false"
+            android:label="Add Employee" />
+        <activity
+            android:name=".controller.LoginActivity"
+            android:exported="false"
+            android:label="Login Page" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

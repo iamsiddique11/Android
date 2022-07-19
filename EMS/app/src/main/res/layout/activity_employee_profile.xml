@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.EmployeeProfile">
+
+    <EditText
+        android:id="@+id/etEPHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="Employee Profile"
+        android:textColor="#325502"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEPHeading"
+        android:padding="5sp"
+        android:background="@drawable/customborder"
+        >
+        <ImageView
+            android:id="@+id/imageEmpProfile"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:src="@drawable/profile"
+           android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tvEPName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="10sp"
+            android:hint="Name"
+            android:textColor="#150E0E"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCentre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5sp"
+        android:background="@drawable/customborder"
+        >
+        <EditText
+            android:id="@+id/etEPGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:inputType="textPersonName"
+            android:text="Gender"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/tvEPGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:hint="Gender"
+            app:layout_constraintEnd_toEndOf="@+id/etEPGender"
+            app:layout_constraintStart_toStartOf="@+id/etEPGender"
+            app:layout_constraintTop_toBottomOf="@+id/etEPGender" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etEPMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:inputType="textPersonName"
+        android:text="Mobile"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGender" />
+
+    <TextView
+        android:id="@+id/tvEPMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="Mob"
+        app:layout_constraintEnd_toEndOf="@+id/etEPMobile"
+        app:layout_constraintStart_toStartOf="@+id/etEPMobile"
+        app:layout_constraintTop_toBottomOf="@+id/etEPMobile" />
+
+    <EditText
+        android:id="@+id/etEPDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:inputType="textPersonName"
+        android:text="Department"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/tvEPMobile" />
+
+    <TextView
+        android:id="@+id/tvEPDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="Dept"
+        app:layout_constraintEnd_toEndOf="@+id/etEPDept"
+        app:layout_constraintStart_toStartOf="@+id/etEPDept"
+        app:layout_constraintTop_toBottomOf="@+id/etEPDept" />
+
+    <TextView
+        android:id="@+id/tvEPSurveyStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center_horizontal"
+        android:hint="SurveyStatus"
+        app:layout_constraintEnd_toEndOf="@+id/etEPSurveyStatus"
+        app:layout_constraintStart_toStartOf="@+id/etEPSurveyStatus"
+        app:layout_constraintTop_toBottomOf="@id/etEPSurveyStatus" />
+
+    <EditText
+        android:id="@+id/etEPSurveyStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:inputType="textPersonName"
+        android:text="Survey Status"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guidelineCentre"
+        app:layout_constraintTop_toBottomOf="@+id/tvEPDept" />
+
+    <TextView
+        android:id="@+id/tvEPEmpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="Emp ID"
+        app:layout_constraintBottom_toBottomOf="@+id/etEPEmpId"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintTop_toTopOf="@+id/etEPEmpId" />
+
+    <EditText
+        android:id="@+id/etEPEmpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Employee ID "
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/tvEPEmpId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="496dp" />
+
+    <EditText
+        android:id="@+id/etEPEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/etEPEmpId"
+        app:layout_constraintStart_toStartOf="@+id/etEPEmpId"
+        app:layout_constraintTop_toBottomOf="@+id/etEPEmpId" />
+
+    <TextView
+        android:id="@+id/tvEPEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center_horizontal"
+        android:hint="EMP Email"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEPEmail" />
+
+    <TextView
+        android:id="@+id/tvEPResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="Comment"
+        android:textColor="#0D7A11"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEPScore"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etEPScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="Employee Rating"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEPEmail" />
+
+    <TextView
+        android:id="@+id/tvEPScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:drawableRight="@drawable/ic_star_rating"
+        android:hint="Score"
+        android:textColor="#0D7A11"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCentre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEPScore" />
+</androidx.constraintlayout.widget.ConstraintLayout>
